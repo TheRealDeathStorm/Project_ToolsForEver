@@ -1,40 +1,47 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Niels
- * Date: 26-9-2016
- * Time: 16:04
- * het index.php voor ToolsForEver project:
+ * User: Niels en Mike
+ * Date: 27-9-2016
+ * Time: 12:54
+ * Het admin.php bestand voor het project van PHP,
+ * Op deze pagina komt het inlog systeem
  */
 ?>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-    </head>
-    <header>
-        <title>ToolsForEver</title>
-    </header>
-    <body>
-    <form action="action_page.php">
-        <div class="imgcontainer">
-            <img src="" alt="Avatar" class="avatar">
+<head>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="main-container">
+    <div class="header">
+        <h1> Admin Panel </h1>
+    </div>
+
+    <div class="main-content">
+        <div class="login">
+            <form method="post" action="admin/index.php">
+                <p><input type="text" name="login" value="" placeholder="Gebruikersnaam"></p>
+                <p><input type="password" name="password" value="" placeholder="Wachtwoord"></p>
+                <p class="remember_me">
+                    <label>
+                        <input type="checkbox" name="remember_me" id="remember_me">
+                        Remember me on this computer
+                    </label>
+                </p>
+                <p class="submit"><input type="submit" name="commit" value="Login"></p>
+            </form>
         </div>
+    </div>
 
-        <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+    <div class="clearfix">
 
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+    </div>
 
-            <button type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
-        </div>
+    <div class="footer">
 
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
-    </body>
+    </div>
+</div>
+</body>
 </html>
+
