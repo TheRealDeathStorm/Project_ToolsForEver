@@ -39,7 +39,7 @@
     </div>
 
     <div class="footer">
-
+        Contact us at: 123@outlook.com
     </div>
 </div>
 </body>
