@@ -8,6 +8,14 @@
  * Op deze pagina komt het inlog systeem
  */
 ?>
+<?php
+
+include('users.php'); // Includes Login Script
+
+if(isset($_SESSION['user'])){
+    header("location: medewerker/medewerker.php");
+}
+?>
 <html>
 <head>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
@@ -20,16 +28,11 @@
 
     <div class="main-content">
         <div class="login">
-            <form method="post" action="admin/index.php">
-                <p><input type="text" name="login" value="" placeholder="Gebruikersnaam"></p>
+            <form action="" method="post">
+                <p><input type="text" name="username" value="" placeholder="Gebruikersnaam"></p>
                 <p><input type="password" name="password" value="" placeholder="Wachtwoord"></p>
-                <p class="remember_me">
-                    <label>
-                        <input type="checkbox" name="remember_me" id="remember_me">
-                        Remember me on this computer
-                    </label>
-                </p>
-                <p class="submit"><input type="submit" name="commit" value="Login"></p>
+                <button type="submit" name="submit" value="Login">Login</button>
+
             </form>
         </div>
     </div>
