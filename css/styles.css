@@ -25,6 +25,11 @@ div.footer {
     width: 960px;
 }
 
+div.footer div.contact {
+    width: 960px;
+    text-align: center;
+}
+
 h1 {
     text-align: center;
 }

@@ -10,7 +10,7 @@ $username = mysqli_real_escape_string($db,$_POST['username']);
 
 $password = mysqli_real_escape_string($db,$_POST['password']);
 
-$sel_user = "select * from werknemer_login where Username='$username' AND Password='$password'";
+$sel_user = "select * from manager_login where Username='$username' AND Password='$password'";
 
 $run_user = mysqli_query($db, $sel_user);
 
@@ -20,7 +20,7 @@ if($check_user>0){
 
 $_SESSION['user']=$username;
 
-echo "<script>window.open('admin/medewerker.php','_self')</script>";
+echo "<script>window.open('manager.php','_self')</script>";
 
 }
 

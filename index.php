@@ -2,19 +2,9 @@
 /**
  * Created by PhpStorm.
  * User: Niels en Mike
- * Date: 27-9-2016
- * Time: 12:54
- * Het admin.php bestand voor het project van PHP,
- * Op deze pagina komt het inlog systeem
+ * Date: 5-10-2016
+ * Time: 11:10
  */
-?>
-<?php
-
-include('users.php'); // Includes Login Script
-
-if(isset($_SESSION['user'])){
-    header("location: medewerker/medewerker.php");
-}
 ?>
 <html>
 <head>
@@ -27,13 +17,14 @@ if(isset($_SESSION['user'])){
     </div>
 
     <div class="main-content">
-        <div class="login">
-            <form action="" method="post">
-                <p><input type="text" name="username" value="" placeholder="Gebruikersnaam"></p>
-                <p><input type="password" name="password" value="" placeholder="Wachtwoord"></p>
-                <button type="submit" name="submit" value="Login">Login</button>
-
-            </form>
+        <div class="">
+            <a href="medewerker/index.php"> Medewerker </a>
+        </div>
+        <div class="">
+            <a href="manager/index.php"> Manager </a>
+        </div>
+        <div class="">
+            <a href="beheerder/index.php"> Beheerder </a>
         </div>
     </div>
 
@@ -42,9 +33,12 @@ if(isset($_SESSION['user'])){
     </div>
 
     <div class="footer">
-        Contact us at: 123@outlook.com
+        <div class="contact">
+            Contact us at: 123@outlook.com
+        </div>
     </div>
 </div>
 </body>
 </html>
+
 
