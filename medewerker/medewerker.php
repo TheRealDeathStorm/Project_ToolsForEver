@@ -14,7 +14,7 @@
 <body>
 <div class="main-container">
     <div class="header">
-        <h1> Beheerder </h1>
+        <h1> Medewerker </h1>
     </div>
 
     <div class="main-content">

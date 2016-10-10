@@ -3,6 +3,8 @@
 body {
     margin: 0 auto;
     width: 960px;
+    background-color: #FFFB78;
+
 }
 
 div.header {
@@ -34,6 +36,16 @@ h1 {
     text-align: center;
 }
 
+div.menu {
+    margin-top: 50px;
+    width: 960px;
+    text-align: center;
+}
+
+div.menu > a {
+    color: blue;
+}
+
 /* De index.php login pagina */
 div.header h1 {
     width: 960px;
@@ -46,3 +58,9 @@ div.main-container div.login {
     justify-content: center;
     text-align: center;
 }
+
+/* De beheer pagina */
+
+
+/* De beheer Admin pagina */
+
