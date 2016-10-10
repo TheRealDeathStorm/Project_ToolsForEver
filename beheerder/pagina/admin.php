@@ -52,10 +52,10 @@ include "schrijf/schrijfbeheerder.php";
                 </form>
             </div>
             <div class="wijzigen ww">
-
+                <h2> Werknemer accounts wijzigen </h2>
             </div>
             <div class="verwijderen wv">
-
+                <h2> Werknemer accounts verwijderen </h2>
             </div>
         </div>
         <div class="manager">
@@ -78,10 +78,10 @@ include "schrijf/schrijfbeheerder.php";
                 </form>
             </div>
             <div class="wijzigen mw">
-
+                <h2> Manager accounts wijzigen </h2>
             </div>
             <div class="verwijderen mv">
-
+                <h2> Manager accounts verwijderen </h2>
             </div>
         </div>
         <div class="beheerder">
@@ -104,10 +104,10 @@ include "schrijf/schrijfbeheerder.php";
                 </form>
             </div>
             <div class="wijzigen mw">
-
+                <h2> Beheerder accounts wijzigen </h2>
             </div>
             <div class="verwijderen mb">
-
+                <h2> Beheerder accounts verwijderen </h2>
             </div>
         </div>
     </div>
