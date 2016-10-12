@@ -9,6 +9,7 @@
 ?>
 <?php
 include "DBconnect.php";
+include "schrijf/schrijfproducten.php";
 ?>
 <html>
 <head>
@@ -35,23 +36,23 @@ include "DBconnect.php";
             <form method="post">
                     <p>
                         product naam:<br>
-                        <input type="text" name="username" placeholder="Gebruikersnaam">
+                        <input type="text" name="product_naam" placeholder="product naam">
                     </p>
                     <p>
                         product voorraad:<br>
-                        <input type="text" name="password" placeholder="Wachtwoord">
+                        <input type="text" name="product_voorraad" placeholder="product voorraad">
                     </p>
                     <p>
                         product prijs exclusief BTW:<br>
-                        <input type="text" name="password" placeholder="Wachtwoord">
+                        <input type="text" name="prijs_excl_btw" placeholder="prijs excl BTW">
                     </p>
                     <p>
                         product prijs inclusief BTW:<br>
-                        <input type="text" name="password" placeholder="Wachtwoord">
+                        <input type="text" name="prijs_incl_btw" placeholder="prijs incl BTW">
                     </p>
                     <p>
                         <button>
-                            <input type="submit" name="werknemertoevoegen">
+                            <input type="submit" name="product_toevoegen">
                         </button>
                     </p>
                 <div class="product_info">
@@ -60,21 +61,34 @@ include "DBconnect.php";
                         <br>
                         <?php
                         if(isset($_POST['producten'])) {
+                            // Define the columns title and name in this array map.
+                            $columns = array(
+                                'Product id' => 'product_id',
+                                'Product naam' => 'product_naam',
+                                'Product voorraad' => 'product_voorraad',
+                                'Product prijs exclusief BTW' => 'product_prijs_excl',
+                                'Product prijs inclusief BTW' => 'product_prijs_incl'
+                            );
+                            // Run the query
+                            $result= mysqli_query($db,"SELECT product_id, product_naam, product_voorraad, product_prijs_excl, product_prijs_incl FROM product_info");
 
-                            $sql = "SELECT product_id, product_naam, product_voorraad, product_prijs_excl, product_prijs_incl FROM product_info";
-                            $result = mysqli_query($db, $sql);
-
-                            if (mysqli_num_rows($result) > 0) {
-                                // output data of each row
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                    echo "Product id: " . $row["product_id"] . "<br>" . "Product naam: " . $row["product_naam"] . "<br>" .
-                                        "Product voorraad: " . $row["product_voorraad"] . "<br>" .
-                                        "product prijs exclusief BTW: " ."€". $row["product_prijs_excl"] . "<br>" .
-                                        "product prijs inclusief BTW: " ."€". $row["product_prijs_incl"];
-                                }
-                            } else {
-                                echo "Error: " . $sql . "<br>" . $db->error;
+                            // Output table header
+                            echo "<table border=\"1px solid black\" width=\"80%\"><tr>";
+                            foreach ($columns as $name => $col_name) {
+                                echo "<th>$name</th>";
                             }
+                            echo "</tr>";
+
+                            // Output rows
+                            while($row = mysqli_fetch_array($result)) {
+                                echo "<tr>";
+                                foreach ($columns as $name => $col_name) {
+                                    echo "<td style=\"text-align:center;\">". $row[$col_name] . "</td>";
+                                }
+                                echo "</tr>";
+                            }
+                            // Close table
+                            echo "</table>";
                         }
                         ?>
                     </form>
