@@ -32,7 +32,7 @@ div.footer div.contact {
     text-align: center;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -64,3 +64,13 @@ div.main-container div.login {
 
 /* De beheer Admin pagina */
 
+
+/* de producten pagina */
+div.main-content-producten > div {
+    display: flex;
+    justify-content: center;
+}
+
+div.main-content-producten div.product_invoer {
+    width:960px;
+}
