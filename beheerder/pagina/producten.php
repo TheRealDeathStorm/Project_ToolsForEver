@@ -17,7 +17,7 @@ include "../DBconnect.php";
 <body>
 <div class="main-container">
     <?php
-        include "../../includes/header.php";
+        include "includes/header.php";
     ?>
     <h2> Producten invoeren</h2>
 
@@ -78,7 +78,7 @@ include "../DBconnect.php";
     </div>
 
     <?php
-        include "../../includes/footer.php";
+        include "includes/footer.php";
     ?>
 </div>
 </body>
