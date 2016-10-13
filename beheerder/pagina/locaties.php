@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Niels
+ * User: Niels en Mike
  * Date: 10-10-2016
  * Time: 11:51
  * De pagina met de verschillende locaties
@@ -9,6 +9,7 @@
 ?>
 <?php
 include "../DBconnect.php";
+include "schrijf/schrijflocaties.php"
 ?>
 <html>
 <head>
@@ -19,13 +20,26 @@ include "../DBconnect.php";
     <?php
         include "includes/header.php";
     ?>
+    <h2> De filialen </h2>
 
-    <div class="main-content">
+    <div class="main-content-locaties">
         <div class="locaties">
             <form method="post">
-                <button type="submit" name="locaties">Locaties</button><br>
-                <?php
-                if(isset($_POST['locaties'])) {
+                <p>
+                    Filiaal naam:<br>
+                    <input type="text" name="filiaal_naam" placeholder="filiaal naam">
+                </p>
+                <p>
+                    <button>
+                        <input type="submit" name="filiaal_toevoegen">
+                    </button>
+                </p>
+
+            <div class="locaties_info">
+                <form method="post">
+                    <button type="submit" name="locaties">Filialen</button><br>
+                    <?php
+                    if(isset($_POST['locaties'])) {
                     // Define the columns title and name in this array map.
                     $columns = array(
                         'Filiaal ID' => 'Filiaal_id',
@@ -51,9 +65,10 @@ include "../DBconnect.php";
                     }
                     // Close table
                     echo "</table>";
-                }
-                ?>
-            </form>
+                    }
+                    ?>
+                </form>
+            </div>
         </div>
     </div>
 

@@ -63,18 +63,42 @@ div.main-container div.login {
     text-align: center;
 }
 
-/* De beheer pagina */
-
-
-/* De beheer Admin pagina */
-
-
 /* de producten pagina */
 div.main-content-producten > div {
     display: flex;
     justify-content: center;
 }
 
-div.main-content-producten div.product_invoer {
+div.main-conctent-producten div.producten {
+    width:960px;
+}
+
+/* de fabriek pagina */
+div.main-content-fabrieken > div {
+    display: flex;
+    justify-content: center;
+}
+
+div.main-content-fabrieken div.fabrieken {
+    width:960px;
+}
+
+/* de locaties pagina */
+div.main-content-locaties > div {
+    display: flex;
+    justify-content: center;
+}
+
+div.main-content-locaties div.locaties {
+    width:960px;
+}
+
+/* de orders pagina */
+div.main-content-orders > div {
+    display: flex;
+    justify-content: center;
+}
+
+div.main-content-orders div.orders {
     width:960px;
 }

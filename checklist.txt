@@ -1,7 +1,3 @@
-1. Globale pagina uitbreiden met invoer.
-2. Fabrieken pagina
-3. Admin panel accounts wijzigen en verwijderen
-4. locatie pagina
+1. Admin panel accounts wijzigen en verwijderen
 
 alle onderdelen en rechten doorvoeren naar manager en medewerker login systeem.
-alles omzetten naar includes, menu, header, footer, e.d.

@@ -19,6 +19,7 @@ include "../DBconnect.php";
     <?php
         include "includes/header.php";
     ?>
+    <h2> Globale weergave </h2>
 
     <div class="main-content">
         <!--
@@ -30,7 +31,6 @@ include "../DBconnect.php";
             <button type="submit" name="filialen">Filialen</button>
                 <br>
                 <?php
-                // BUG fixen.
                 if(isset($_POST['filialen'])) {
                     // Define the columns title and name in this array map.
                     $columns = array (
@@ -39,6 +39,42 @@ include "../DBconnect.php";
                     );
                     // Run the query
                     $result= mysqli_query($db,"SELECT Filiaal_id, Filiaal_naam FROM filialen");
+
+                    // Output table header
+                    echo "<table border=\"1px solid black\" width=\"80%\"><tr>";
+                    foreach ($columns as $name => $col_name) {
+                        echo "<th>$name</th>";
+                    }
+                    echo "</tr>";
+
+                    // Output rows
+                    while($row = mysqli_fetch_array($result)) {
+                        echo "<tr>";
+                        foreach ($columns as $name => $col_name) {
+                            echo "<td style=\"text-align:center;\">". $row[$col_name] . "</td>";
+                        }
+                        echo "</tr>";
+                    }
+                    // Close table
+                    echo "</table>";
+                }
+                ?>
+            </form>
+        </div>
+        <div class="fabrieken">
+            <form method="post">
+                <button type="submit" name="fabrieken">Fabrieken</button>
+                <br>
+                <?php
+                if(isset($_POST['fabrieken'])) {
+                    // Define the columns title and name in this array map.
+                    $columns = array (
+                        'Fabriek id' => 'fabriek_id',
+                        'Fabriek naam' => 'fabriek_naam',
+                        'Telefoon nummer' => 'telefoon_nummer'
+                    );
+                    // Run the query
+                    $result= mysqli_query($db,"SELECT fabriek_id, fabriek_naam, telefoon_nummer FROM fabrieken");
 
                     // Output table header
                     echo "<table border=\"1px solid black\" width=\"80%\"><tr>";
@@ -108,13 +144,14 @@ include "../DBconnect.php";
                     // Define the columns title and name in this array map.
                     $columns = array(
                         'Order id' => 'Order_id',
-                        'Product Naam' => 'product_naam',
+                        'Filiaal naam' => 'filiaal_naam',
+                        'Product naam' => 'product_naam',
                         'Order aantal' => 'order_aantal',
                         'Order prijs' => 'order_prijs'
                     );
 
                     // Run the query
-                    $result= mysqli_query($db,"SELECT Order_id, product_naam, order_aantal, order_prijs FROM order_info");
+                    $result= mysqli_query($db,"SELECT Order_id, filiaal_naam, product_naam, order_aantal, order_prijs FROM order_info");
 
                     // Output table header
                     echo "<table border=\"1px solid black\" width=\"80%\"><tr>";

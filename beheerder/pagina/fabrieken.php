@@ -9,6 +9,7 @@
 ?>
 <?php
 include "../DBconnect.php";
+include "schrijf/schrijffabriek.php"
 ?>
 <html>
 <head>
@@ -19,8 +20,27 @@ include "../DBconnect.php";
     <?php
         include "includes/header.php";
     ?>
+    <h2> Fabrieken </h2>
+
+    <div class="main-content-fabrieken">
         <div class="fabrieken">
             <form method="post">
+                <p>
+                    Fabriek naam:<br>
+                    <input type="text" name="fabriek_naam" placeholder="fabriek naam">
+                </p>
+                <p>
+                    Telefoon nummer:<br>
+                    <input type="text" name="telefoon_nummer" placeholder="telefoon nummer">
+                </p>
+                <p>
+                    <button>
+                        <input type="submit" name="fabriek_toevoegen">
+                    </button>
+                </p>
+
+                <div class="fabriek_info">
+                <form method="post">
                 <button type="submit" name="fabrieken">Fabrieken</button><br>
                 <?php
                 if(isset($_POST['fabrieken'])) {
@@ -53,6 +73,8 @@ include "../DBconnect.php";
                 }
                 ?>
             </form>
+            </div>
+        </div>
         </div>
 </div>
 

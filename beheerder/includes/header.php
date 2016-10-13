@@ -11,8 +11,9 @@
         <nav>
             <a href="pagina/globaal.php">Globale weergave</a>
             <a href="pagina/fabrieken.php"> Fabrieken</a>
+            <a href="pagina/locaties.php"> Locaties</a>
             <a href="pagina/producten.php"> Producten</a>
-            <a href="pagina/locaties.php"> De locaties</a>
+            <a href="pagina/orders.php"> Orders</a>
             <a href="pagina/admin.php"> Admin panel</a>
         </nav>
     </div>
