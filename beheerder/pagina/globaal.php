@@ -33,12 +33,12 @@ include "../DBconnect.php";
                 // BUG fixen.
                 if(isset($_POST['filialen'])) {
                     // Define the columns title and name in this array map.
-                    $columns = array(
-                        'Filiaal id' => 'filiaal_id',
-                        'Filiaal naam' => 'filiaal_naam'
+                    $columns = array (
+                        'Filiaal id' => 'Filiaal_id',
+                        'Filiaal naam' => 'Filiaal_naam'
                     );
                     // Run the query
-                    $result= mysqli_query($db,"SELECT filiaal_id, filiaal_naam FROM filiaal");
+                    $result= mysqli_query($db,"SELECT Filiaal_id, Filiaal_naam FROM filialen");
 
                     // Output table header
                     echo "<table border=\"1px solid black\" width=\"80%\"><tr>";
@@ -108,14 +108,13 @@ include "../DBconnect.php";
                     // Define the columns title and name in this array map.
                     $columns = array(
                         'Order id' => 'Order_id',
-                        'Product id' => 'Product_id',
                         'Product Naam' => 'product_naam',
                         'Order aantal' => 'order_aantal',
                         'Order prijs' => 'order_prijs'
                     );
 
                     // Run the query
-                    $result= mysqli_query($db,"SELECT Order_id, Product_id, product_naam, order_aantal, order_prijs FROM order_info");
+                    $result= mysqli_query($db,"SELECT Order_id, product_naam, order_aantal, order_prijs FROM order_info");
 
                     // Output table header
                     echo "<table border=\"1px solid black\" width=\"80%\"><tr>";

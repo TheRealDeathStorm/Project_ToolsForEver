@@ -26,7 +26,7 @@ include "schrijf/schrijfbeheerder.php";
     <div class="main-content">
         <div class="werkenemer">
             <div class="toevoegen wt">
-                <h2> Werkemer toevoegen</h2>
+                <h3> Werkemer toevoegen</h3>
                 <form method="post">
                     <p>
                         Gebruikersnaam:<br>
@@ -44,15 +44,15 @@ include "schrijf/schrijfbeheerder.php";
                 </form>
             </div>
             <div class="wijzigen ww">
-                <h2> Werknemer accounts wijzigen </h2>
+                <h3> Werknemer accounts wijzigen </h3>
             </div>
             <div class="verwijderen wv">
-                <h2> Werknemer accounts verwijderen </h2>
+                <h3> Werknemer accounts verwijderen </h3>
             </div>
         </div>
         <div class="manager">
             <div class="toevoegen mt">
-                <h2> manager toevoegen</h2>
+                <h3> manager toevoegen</h3>
                 <form method="post">
                     <p>
                         Gebruikersnaam:<br>
@@ -70,15 +70,15 @@ include "schrijf/schrijfbeheerder.php";
                 </form>
             </div>
             <div class="wijzigen mw">
-                <h2> Manager accounts wijzigen </h2>
+                <h3> Manager accounts wijzigen </h3>
             </div>
             <div class="verwijderen mv">
-                <h2> Manager accounts verwijderen </h2>
+                <h3> Manager accounts verwijderen </h3>
             </div>
         </div>
         <div class="beheerder">
             <div class="toevoegen mb">
-                <h2> beheerder toevoegen</h2>
+                <h3> beheerder toevoegen</h3>
                 <form method="post">
                     <p>
                         Gebruikersnaam:<br>
@@ -96,10 +96,10 @@ include "schrijf/schrijfbeheerder.php";
                 </form>
             </div>
             <div class="wijzigen mw">
-                <h2> Beheerder accounts wijzigen </h2>
+                <h3> Beheerder accounts wijzigen </h3>
             </div>
             <div class="verwijderen mb">
-                <h2> Beheerder accounts verwijderen </h2>
+                <h3> Beheerder accounts verwijderen </h3>
             </div>
         </div>
     </div>

@@ -1,8 +1,7 @@
-1. Globale pagina uitbreiden met invoer en bug fixen.
+1. Globale pagina uitbreiden met invoer.
 2. Fabrieken pagina
 3. Admin panel accounts wijzigen en verwijderen
 4. locatie pagina
-5. Product pagina invoer van producten
 
 alle onderdelen en rechten doorvoeren naar manager en medewerker login systeem.
 alles omzetten naar includes, menu, header, footer, e.d.
