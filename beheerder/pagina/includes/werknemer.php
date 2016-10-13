@@ -40,8 +40,8 @@
         echo "<table border=1px solid black width=80%>
                           <tr>
                           <th>ID</th>
-                          <th>Username</th>
-                          <th>Password</th>
+                          <th>username</th>
+                          <th>password</th>
                           </tr>";
 
         while($record = mysqli_fetch_array($myData)) {
@@ -74,8 +74,8 @@
         echo "<table border=1px solid black width=20%>
                           <tr>
                           <th>ID</th>
-                          <th>Username</th>
-                          <th>Password</th>
+                          <th>username</th>
+                          <th>password</th>
                           </tr>";
 
         while($record = mysqli_fetch_array($myData)) {

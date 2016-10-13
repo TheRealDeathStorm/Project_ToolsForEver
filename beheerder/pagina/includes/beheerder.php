@@ -11,11 +11,11 @@
     <form method="post">
         <p>
             Gebruikersnaam:<br>
-            <input type="text" name="username" placeholder="Gebruikersnaam">
+            <input type="text" name="Username" placeholder="Gebruikersnaam">
         </p>
         <p>
             Wachtwoord:<br>
-            <input type="text" name="password" placeholder="Wachtwoord">
+            <input type="text" name="Password" placeholder="Wachtwoord">
         </p>
         <p>
             <button>
@@ -29,7 +29,7 @@
     <?php
 
     if(isset($_POST['update'])) {
-        $UpdateQuery = "UPDATE beheer_login SET User_id='$_POST[id]', username='$_POST[username]', password='$_POST[password]' WHERE username='$_POST[hidden]'";
+        $UpdateQuery = "UPDATE beheer_login SET User_id='$_POST[id]', Username='$_POST[username]', Password='$_POST[password]' WHERE Username='$_POST[hidden]'";
         mysqli_query($db, $UpdateQuery);
     };
 
@@ -47,9 +47,9 @@
         echo "<form action=admin.php method=post>";
         echo "<tr>";
         echo "<td>" . "<input type=text name=id value=" . $record['User_id'] . " </td>";
-        echo "<td>" . "<input type=text name=username value=" . $record['username'] . " </td>";
-        echo "<td>" . "<input type=text name=password value=" . $record['password'] . " </td>";
-        echo "<td>" . "<input type=hidden name=hidden value=" . $record['username'] . " </td>";
+        echo "<td>" . "<input type=text name=username value=" . $record['Username'] . " </td>";
+        echo "<td>" . "<input type=text name=password value=" . $record['Password'] . " </td>";
+        echo "<td>" . "<input type=hidden name=hidden value=" . $record['Username'] . " </td>";
         echo "<td>" . "<input type=submit name=update value=update" . " </td>";
         echo "</tr>";
         echo "</form>";
@@ -63,7 +63,7 @@
     <?php
 
     if(isset($_POST['delete'])) {
-        $DeleteQuery = "DELETE FROM beheer_login WHERE username='$_POST[hidden]'";
+        $DeleteQuery = "DELETE FROM beheer_login WHERE Username='$_POST[hidden]'";
         mysqli_query($db, $DeleteQuery);
     };
 
@@ -81,9 +81,9 @@
         echo "<form action=admin.php method=post>";
         echo "<tr>";
         echo "<td>" . "<input type=text name=id value=" . $record['User_id'] . " </td>";
-        echo "<td>" . "<input type=text name=username value=" . $record['username'] . " </td>";
-        echo "<td>" . "<input type=text name=password value=" . $record['password'] . " </td>";
-        echo "<td>" . "<input type=hidden name=hidden value=" . $record['username'] . " </td>";
+        echo "<td>" . "<input type=text name=username value=" . $record['Username'] . " </td>";
+        echo "<td>" . "<input type=text name=password value=" . $record['Password'] . " </td>";
+        echo "<td>" . "<input type=hidden name=hidden value=" . $record['Username'] . " </td>";
         echo "<td>" . "<input type=submit name=delete value=delete" . " </td>";
         echo "</tr>";
         echo "</form>";

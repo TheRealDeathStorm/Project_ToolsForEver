@@ -8,6 +8,7 @@
  */
 ?>
 <?php
+include "../DBconnect.php";
 include "schrijf/schrijfwerknemer.php";
 include "schrijf/schrijfmanager.php";
 include "schrijf/schrijfbeheerder.php";
