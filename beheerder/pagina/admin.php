@@ -19,17 +19,9 @@ include "schrijf/schrijfbeheerder.php";
 </head>
 <body>
 <div class="main-container">
-    <div class="header">
-        <div class="menu">
-            <nav>
-                <a href="globaal.php">Globale weergave</a>
-                <a href="fabrieken.php"> Fabrieken</a>
-                <a href="producten.php"> Producten</a>
-                <a href="locaties.php"> De locaties</a>
-                <a href="admin.php"> Admin panel</a>
-            </nav>
-        </div>
-    </div>
+    <?php
+        include "../../includes/header.php";
+    ?>
 
     <div class="main-content">
         <div class="werkenemer">
@@ -116,14 +108,9 @@ include "schrijf/schrijfbeheerder.php";
 
     </div>
 
-    <div class="footer">
-        <div class="contact">
-            Contact us at: 123@outlook.com
-            <div class="logout">
-                <a href="../logout.php">Log uit</a>
-            </div>
-        </div>
-    </div>
+    <?php
+    include "../../includes/footer.php";
+    ?>
 </div>
 </body>
 </html>
