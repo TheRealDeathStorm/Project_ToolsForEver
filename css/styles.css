@@ -103,7 +103,13 @@ div.main-content-orders div.orders {
 
 
 /* De neheerder admin panel */
+div.main-content-admin {
+    margin-left: -220px;
+}
 
+div.main-content-admin div.wijzigen {
+    height: 50%;
+}
 div.main-container div.manager {
     margin-left: 20px;
 }
