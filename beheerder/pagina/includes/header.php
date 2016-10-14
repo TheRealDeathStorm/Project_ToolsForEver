@@ -7,6 +7,9 @@
  */
 ?>
 <div class="header">
+    <div class="logo">
+        <img src="../image/ToolsForEver.jpg" alt="logo" style="width:92px;height:69px;">
+    </div>
     <div class="menu">
         <nav>
             <a href="globaal.php">Globale weergave</a>

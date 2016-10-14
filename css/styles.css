@@ -68,6 +68,7 @@ div.main-content-producten > div {
     display: flex;
     justify-content: center;
     width:960px;
+    flex-wrap: wrap;
 }
 
 div.main-content-producten div.product_update{
@@ -107,12 +108,22 @@ div.main-content-orders div.orders {
 
 /* De neheerder admin panel */
 div.main-content-admin {
-    margin-left: -220px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    margin-left: 180px;
+    margin-right: 119px;
 }
 
-div.main-content-admin div.wijzigen {
-    height: 50%;
+div.main-content-admin div.verwijderen {
+    margin-bottom: 40px;
 }
+
+div.verwijderen_wv {
+    margin-bottom: 40px;
+}
+
 div.main-container div.manager {
     margin-left: 20px;
 }
@@ -121,4 +132,24 @@ div.main-container div.beheerder {
     margin-left: 20px;
 }
 
+div.main-container div.werkenemer {
+    margin-left: 20px;
+}
 
+div.werkenemer {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+div.manager {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+div.beheerder {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}

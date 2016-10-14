@@ -42,10 +42,11 @@ include "schrijf/schrijfproducten.php";
                         <input type="text" name="prijs_incl_btw" placeholder="prijs incl btw">
                     </p>
                     <p>
-                        <button>
-                            <input type="submit" name="product_toevoegen">
+                        <button type="submit" name="product_toevoegen">
+                            Product toevoegen
                         </button>
                     </p>
+            </form>
                 <div class="product_update">
                     <h3> Product voorraad updaten </h3>
                         <?php
