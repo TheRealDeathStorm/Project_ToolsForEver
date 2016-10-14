@@ -68,7 +68,10 @@ div.main-content-producten > div {
     display: flex;
     justify-content: center;
     width:960px;
+}
 
+div.main-content-producten div.product_update{
+    width: 960px;
 }
 
 /* de fabriek pagina */

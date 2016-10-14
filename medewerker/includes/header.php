@@ -13,7 +13,6 @@
             <a href="pagina/fabrieken.php"> Fabrieken</a>
             <a href="pagina/locaties.php"> Locaties</a>
             <a href="pagina/producten.php"> Producten</a>
-            <a href="pagina/orders.php"> Orders</a>
         </nav>
     </div>
 </div>
