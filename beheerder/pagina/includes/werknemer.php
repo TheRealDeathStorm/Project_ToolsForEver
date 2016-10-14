@@ -16,7 +16,7 @@
             </p>
             <p>
                 Wachtwoord:<br>
-                <input type="text" name="password" placeholder="Wachtwoord">
+                <input type="password" name="password" placeholder="Wachtwoord">
             </p>
             <p>
                 <button>

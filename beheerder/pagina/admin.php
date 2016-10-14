@@ -23,21 +23,36 @@ include "schrijf/schrijfbeheerder.php";
     include "includes/header.php";
     ?>
 
-    <div class="main-content">
+    <div class="main-content-admin">
         <div class="werkenemer">
+            <form method="post">
+                <button type="submit" name="werknemer">Werknemers</button>
             <?php
-                include "includes/werknemer.php";
+            if(isset($_POST['werknemer'])) {
+                require_once "includes/werknemer.php";
+            }
             ?>
+            </form>
         </div>
         <div class="manager">
-            <?php
-                include "includes/manager.php";
-            ?>
+            <form method="post">
+                <button type="submit" name="manager">Managers</button>
+                <?php
+                if(isset($_POST['manager'])) {
+                    require_once "includes/manager.php";
+                }
+                ?>
+            </form>
         </div>
         <div class="beheerder">
-            <?php
-                include "includes/beheerder.php";
-            ?>
+            <form method="post">
+                <button type="submit" name="beheerder">Beheerders</button>
+                <?php
+                if(isset($_POST['beheerder'])) {
+                    require_once "includes/beheerder.php";
+                }
+                ?>
+            </form>
         </div>
     </div>
 

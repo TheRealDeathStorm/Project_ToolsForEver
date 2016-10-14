@@ -67,10 +67,8 @@ div.main-container div.login {
 div.main-content-producten > div {
     display: flex;
     justify-content: center;
-}
-
-div.main-conctent-producten div.producten {
     width:960px;
+
 }
 
 /* de fabriek pagina */
@@ -102,3 +100,16 @@ div.main-content-orders > div {
 div.main-content-orders div.orders {
     width:960px;
 }
+
+
+/* De neheerder admin panel */
+
+div.main-container div.manager {
+    margin-left: 20px;
+}
+
+div.main-container div.beheerder {
+    margin-left: 20px;
+}
+
+
