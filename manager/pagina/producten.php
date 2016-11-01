@@ -80,6 +80,9 @@ include "schrijf/schrijfproducten.php";
                             echo "<td>" . "<input type=submit name=update value=update" . " </td>";
                             echo "</tr>";
                             echo "</form>";
+                            if ($record['product_voorraad'] < "100") {
+                                echo "<script>alert('Pas op! de voorraad is bijna op')</script>";
+                            }
                         }
                         echo "</table>";
                         ?>

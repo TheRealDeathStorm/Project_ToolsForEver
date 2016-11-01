@@ -7,6 +7,12 @@ body {
 
 }
 
+#result{
+    position:relative;
+    width:500px;
+    margin:0 auto;
+}
+
 div.header {
     width: 960px;
     height: 100px;

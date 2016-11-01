@@ -33,6 +33,12 @@ include "../DBconnect.php";
                     // Run the query
                     $result = mysqli_query($db, "SELECT fabriek_id, fabriek_naam, telefoon_nummer FROM fabrieken");
 
+                ?>
+
+                <div id="result">
+
+                <?php
+
                     // Output table header
                     echo "<table border=\"1px solid black\" width=\"80%\"><tr>";
                     foreach ($columns as $name => $col_name) {
@@ -51,6 +57,8 @@ include "../DBconnect.php";
                     // Close table
                     echo "</table>";
                 ?>
+                </div>
+
 
             </div>
         </div>

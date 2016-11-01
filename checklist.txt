@@ -1,3 +1,4 @@
-1. Admin panel accounts wijzigen en verwijderen
-
-alle onderdelen en rechten doorvoeren naar manager en medewerker login systeem.
+Punten om aan te werken
+1.	Css onderdelen
+2.	Producten en filialen relatie
+3.	Vragen mening verloop aan project leider

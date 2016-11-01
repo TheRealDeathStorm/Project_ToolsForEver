@@ -25,5 +25,4 @@ VALUES ('$product_naam', '$product_voorraad', '$prijs_excl_btw', '$prijs_incl_bt
     } else {
         echo "Error: " . $sql . "<br>" . $db->error;
     }
-
 }
